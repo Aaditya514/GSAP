@@ -13,7 +13,9 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 ✅ ScrollTrigger: triggering animations on scroll  
 ✅ Pinning elements while scrolling  
 ✅ Scrubbing animations  
-✅ Scroll-based timelines
+✅ Scroll-based timelines  
+✅ Small SVG animations using GSAP
+
 
 ---
 
@@ -30,7 +32,8 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 ## 📁 Project Structure
 
 ```
-/gsap-scrolltrigger-playground
+/GSAP
+├── SVG-ANIMATIONS
 ├── index.html         # Main HTML file
 ├── style.css          # Styling for the layout and elements
 ├── script.js          # GSAP + ScrollTrigger animations
@@ -61,7 +64,8 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 - `gsap.from(target, vars)`: Starts from the given properties and animates to current  
 - `gsap.timeline()`: Chains multiple animations with more control  
 - `yoyo: true`: Makes the animation reverse after finishing  
-- `stagger: value`: Adds delay between each item in a group (e.g., `stagger: 0.2`)  
+- `stagger: value`: Adds delay between each item in a group (e.g., `stagger: 0.2`)
+-  `attr: { d: path }`: Used to animate SVG path data (`d` attribute)
 
 ### 🔹 ScrollTrigger Options & Concepts
 
