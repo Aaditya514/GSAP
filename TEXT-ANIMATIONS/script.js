@@ -35,11 +35,12 @@ gsap.from(".back",{// Select all elements with the class "back"
     stagger:-0.15,
     ease:"back.out(1.7)"
 })
+// last gsap animation I added on my own trying some other stuff for future 
 gsap.to("h1",{
     color:"#8000ffff",
     scale:0.25,
-    x: -window.innerWidth / 2.25 , // moves left to 20px from edge
-    y: -window.innerHeight / 2.25 , // moves up to 20px from top
+    x: -window.innerWidth / 2.25 , 
+    y: -window.innerHeight / 2.25 , 
     delay:3,
     duration:2
 })
