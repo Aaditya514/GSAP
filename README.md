@@ -16,7 +16,8 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 ✅ Scroll-based timelines  
 ✅ Cursor-based timelines  
 ✅ Text-based timelines  
-✅ Small SVG animations using GSAP
+✅ Small SVG animations using GSAP  
+✅ Scroll-based text animations  
 
 
 ---
@@ -35,6 +36,7 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 
 ```
 /GSAP
+├── SCROLL-TEXT-ANIMATIONS
 ├── CURSOR-ANIMATIONS
 ├── SVG-ANIMATIONS
 ├── TEXT-ANIMATIONS
@@ -55,7 +57,7 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 - Text-based animations with staggered letter effects  
 - Timeline-based sequences for precise animation control  
 - Cursor-based GSAP interactions for dynamic user feedback  
-
+- Scroll-based text animations for engaging narrative reveals  
 
 ---
 
