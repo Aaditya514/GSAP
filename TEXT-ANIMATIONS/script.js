@@ -17,6 +17,7 @@ function breakTheText() {
   h1.innerHTML = clutter; // Set the innerHTML of the h1 element to the new HTML structure
 }
 breakTheText();
+
 // Animation for the first half of the text
 gsap.from(".front",{// Select all elements with the class "front"
     y:50,
@@ -43,3 +44,51 @@ gsap.to("h1",{
     delay:3,
     duration:2
 })
+
+
+
+var menu = document.querySelector("#nav i")
+var cross = document.querySelector("#full i")
+
+var tl = gsap.timeline()
+tl.to("#full",{
+    right:"0",
+    duration:0.8,
+})
+
+tl.from("#full h4",{
+    x:150,
+    duration:0.6,
+    stagger:0.25, // for multiple elements to animate one after another
+    opacity:0,
+})
+
+tl.from("#full i",{
+    opacity:0,
+    rotate:270,
+    duration:0.3
+})
+
+tl.pause()
+
+menu.addEventListener("click",()=>{
+    tl.play()
+})
+cross.addEventListener("click",()=>{
+    tl.reverse();
+    
+})
+const background = document.querySelector('body');
+const bgImageRule = CSSRulePlugin.getRule("body::before");
+gsap.from(background, {
+    duration: 3, // Duration of the animation in seconds
+    opacity:0,
+    backgroundImage: "url(https://external-preview.redd.it/-JL_9hSeDYderzR6MFTwAPJzsJ2QLcKUxdAsXFG5y3k.png?auto=webp&s=b164612e929d7e3da0e6b3831f1dc4ca8b0c3994)",
+    ease: "power2.inOut" // Easing function for smooth animation
+});
+ gsap.to(bgImageRule, {
+    opacity: 1,
+    delay:2.5,
+    duration: 3,
+    ease: "power2.inOut"
+  });

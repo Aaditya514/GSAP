@@ -15,6 +15,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://external-preview.redd.it/-JL_9hSeDYderzR6MFTwAPJzsJ2QLcKUxdAsXFG5y3k.png?auto=webp&s=b164612e929d7e3da0e6b3831f1dc4ca8b0c3994);
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Start fully transparent */
+    z-index: -1;
+    pointer-events: none;
 }
 h1{
     font-size: 100px;
@@ -23,4 +36,45 @@ h1{
 }
 h1 span{
     display: inline-block; /* to apply transform on each letter */
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav i{
+    font-size: 30px;
+    font-weight:800;
+    cursor: pointer;
+    color:#fff;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+}
+#full{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.18);
+    top: 0;
+    right: -30%;
+    backdrop-filter: blur(10px);
+    padding: 150px 60px;
+}
+#full h4{
+    font-size:50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color:white;
+}
+#full i{
+    position:absolute;
+    top: 5%;
+    right: 10%;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
 }
