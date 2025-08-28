@@ -14,6 +14,8 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 ✅ Pinning elements while scrolling  
 ✅ Scrubbing animations  
 ✅ Scroll-based timelines  
+✅ Cursor-based timelines  
+✅ Text-based timelines  
 ✅ Small SVG animations using GSAP
 
 
@@ -33,7 +35,10 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 
 ```
 /GSAP
+├── CURSOR-ANIMATIONS
 ├── SVG-ANIMATIONS
+├── TEXT-ANIMATIONS
+├── TIMELINE-ANIMATIONS
 ├── index.html         # Main HTML file
 ├── style.css          # Styling for the layout and elements
 ├── script.js          # GSAP + ScrollTrigger animations
@@ -43,10 +48,14 @@ This repo is where I experiment with animations using [GSAP (GreenSock Animation
 
 ## ✨ Features
 
-- Smooth, scroll-triggered animations using GSAP
-- Element pinning and scrubbing effects
-- Responsive design with animated sections
-- Experimental playground for testing scroll ideas
+- Smooth, scroll-triggered animations using GSAP  
+- Element pinning and scrubbing effects for immersive storytelling  
+- Responsive design with fluid, animated sections  
+- Experimental playground for testing scroll-based ideas  
+- Text-based animations with staggered letter effects  
+- Timeline-based sequences for precise animation control  
+- Cursor-based GSAP interactions for dynamic user feedback  
+
 
 ---
 
