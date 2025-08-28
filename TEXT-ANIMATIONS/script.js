@@ -2,7 +2,7 @@ function breakTheText() {
   var h1 = document.querySelector("h1");
   var h1Text = h1.textContent; // Select the h1 element and get its text content
 
-  var splittedText = h1Text.split(""); // Split the text content into an array of individual characters
+  var splittedText = h1Text.split(""); //Split the text content into an array of individual characters
   var halfValue = Math.floor(splittedText.length / 2); // Calculate the halfway point of the text length
 
   var clutter = ""; // Initialize an empty string to hold the new HTML structure
